@@ -1,0 +1,28 @@
+  
+name: 'Sofy-Web-Task-Run'
+description: 'Run Sofy web prompt'
+inputs:
+  subscription_key:
+    description: 'You are required to enter Subscription key'
+    required: true
+  project_id:
+    description: 'Unique identifier for the project'
+    required: true
+  prompt_id:
+    description: 'ID of an existing prompt (optional if prompt is not provided)'
+    required: false
+  prompt:
+    description: 'Prompt text (optional if prompt_id is not provided)'
+    required: false
+runs:
+  using: "composite"
+  steps:
+    - run: echo  ${{ inputs.project_id }}.
+      shell: bash
+    - run: chmod +x ${{ github.action_path }}/index.sh
+      shell: bash
+    - run: ${{ github.action_path }}/index.sh
+      shell: bash
+branding:
+  icon: 'check-circle'
+  color: 'green'      
