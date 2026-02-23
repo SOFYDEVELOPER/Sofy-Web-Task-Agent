@@ -46,7 +46,7 @@ Make sure to include the checkout action before using the Sofy action.
   uses: 'actions/checkout@v2'
 
 - name: 'Run Sofy Web Prompt'
-  uses: 'SOFYDEVELOPER/sofy-web-task-run@main'
+  uses: 'SOFYDEVELOPER/Sofy-Web-Task-Action@main'
   with:
     project_id: 'your_project_id'
     subscription_key: 'your_subscription_key'
@@ -56,7 +56,7 @@ Make sure to include the checkout action before using the Sofy action.
 If you already have a saved prompt inside Sofy:
 
 - name: 'Run Sofy Web Prompt'
-  uses: 'SOFYDEVELOPER/sofy-web-task-run@main'
+  uses: 'SOFYDEVELOPER/Sofy-Web-Task-Action@main'
   with:
     project_id: 'your_project_id'
     subscription_key: 'your_subscription_key'
@@ -77,7 +77,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Execute Sofy Web Prompt
-        uses: SOFYDEVELOPER/sofy-web-task-run@main
+        uses: SOFYDEVELOPER/Sofy-Web-Task-Action@main
         with:
           project_id: '69773c4d1749de90bd7b6bb4'
           subscription_key: 'YOUR_SUBSCRIPTION_KEY'
@@ -104,3 +104,4 @@ Valid Sofy project_id
 Valid subscription_key
 
 Either prompt or prompt_id
+
