@@ -1,4 +1,4 @@
-## Sofy-Web-Task-Run
+## Sofy-Web-Task-Run-Agent
 
 This repository contains a GitHub Action that allows you to execute a Sofy Web Prompt directly from your GitHub workflow.
 
@@ -104,4 +104,5 @@ Valid Sofy project_id
 Valid subscription_key
 
 Either prompt or prompt_id
+
 
